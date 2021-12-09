@@ -1,8 +1,8 @@
 # Project Description
 
-Condition Based Maintenance (CBM) uses sensor to to collect real-time measurement (ie. pressure, temperature, and vibration). CBM data allows maintenance personnel to perform maintenance at the exact moment it is needed, prior to failure. This can be doing by **Anomaly Detection** to detect machine failures. There are some types of anomaly detection [1-3]. In this project, using **Data Mining**. This approach can gives patterns that more informative and easier to understand. The patterns can be use further to trigger alert for alerting machine failures. In the other hand, this approach is also quite light and does not require much time. So, it is considered suitable for solving anomaly detection problems in small datasets, such as the used dataset.
+Condition Based Maintenance (CBM) uses the sensor to collect real-time measurements (ie. pressure, temperature, and vibration). CBM data allows maintenance personnel to perform maintenance at the exact moment it is needed, prior to failure. This can be done by **Anomaly Detection** to detect machine failures. There are some types of anomaly detection [1-3]. In this project, using **Data Mining**. This approach can give patterns that are more informative and easier to understand. The patterns can be used further to trigger alerts for alerting machine failures. On the other hand, this approach is also quite light and does not require much time. So, it is considered suitable for solving anomaly detection problems in small datasets, such as the used dataset.
 
-_Keywords_: `Anomaly Detection`, `Data Mining`, `Pattern Anomaly`, `Alert`
+_Keywords_: `Condition Based Maintenance`, `Anomaly Detection`, `Data Mining`, `Pattern Anomaly`, `Alert`
 
 
 # Dataset Description  
@@ -13,7 +13,7 @@ The dataset is vibration sensor readings from NASA Acoustics and Vibration Datab
 
 # Method
 
-The idea behind this approach adopted from proposed framework in [4], but simpler and customable according to the given dataset. First step is to discretize the value of each sensor which indicates the sensor is in normal or failure condition. Then the results are clustered to find out the condition of the machine, so that in the end a pattern can be obtained to give early warning when the machine experiences signs of failure.
+The idea behind this approach is adopted from the proposed framework in [4], but simpler and customizable according to the given dataset. The first step is to discretize the value of each sensor which indicates the sensor is in normal or failure condition. Then the results are clustered to find out the condition of the machine so that in the end a pattern can be obtained to give an early warning when the machine experiences signs of failure.
 
 # Results  
 
@@ -33,15 +33,15 @@ Rules obtained for machine failures:
 ![Plot Labeled Bearings](img/Plot_Labeled_Bearings.png "Plot Labeled Bearings")
 From Bearing Status:
 
-* It can be seen that **Bearing 1** is the first sensor that indicates failure. It doesn't, makes the machine failure immediately. But, it migh be considered as the root cause of machine failure.
-* Machine start failure when Bearing 1 and Bearing 2 failure.
+* It can be seen that **Bearing 1** is the first sensor that indicates failure. It doesn't, making the machine fail immediately. But, it might be considered as the root cause of machine failure.
+* Machine start failure when Bearing 1 and Bearing 2 fail.
 
 
 ## Time Interval  
 
 ![Plot Result](img/Result.png "Plot Result")
 
-By using the generated rules, it give time interval of **23 hours and 20 minutes** (since the first alert) before the machine is completely broken.
+By using the generated rules, it gives a time interval of **23 hours and 20 minutes** (since the first alert) before the machine is completely broken.
 
 
 
